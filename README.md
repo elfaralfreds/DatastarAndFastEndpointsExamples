@@ -50,6 +50,8 @@ While looking into dotnet and Datastar, I found that there were very few example
 
 Base for my repo is from his "DatastarExamples" repository. It is a collection of examples of using Datastar with different frameworks and languages. The examples are not all working, but they are a good starting point for learning how to use Datastar with different frameworks.
 
+[Check his repo out here →](https://github.com/RickTheHat/DatastarExamples)
+
 ## References
 
 - https://github.com/sebastienros/fluid/blob/main/MinimalApis.LiquidViews
