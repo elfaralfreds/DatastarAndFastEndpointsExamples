@@ -15,7 +15,7 @@ public class FallbackNotFoundEndpoint : EndpointWithoutRequest
 
     public override async Task HandleAsync(CancellationToken ct)
     {
-        var path = Route<string>("path");        
+        var path = Route<string>("path");
         await Results.Extensions.View("Errors/404", new { Path = path }).ExecuteAsync(this.HttpContext);
     }
 }

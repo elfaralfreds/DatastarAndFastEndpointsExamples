@@ -1,5 +1,8 @@
-<a href="/examples" class="bg-[#b39552] text-white p-6 w-full block p-2 rounded-sm hover:no-underline text-center text-xl mt-4 mb-6">
-    GO TO EXAMPLES
+<a
+  href="/examples"
+  class="bg-[#b39552] text-white p-6 w-full block p-2 rounded-sm hover:no-underline text-center text-xl mt-4 mb-6"
+>
+  GO TO EXAMPLES
 </a>
 
 <section class="p-12 bg-white/5 rounded-lg mb-6">
@@ -18,20 +21,132 @@
 </section>
 
 <section class="p-12 bg-white/5 rounded-lg mb-6">
+  <h2 class="text-4xl font-medium mb-6 text-[#957B44]">Goals</h2>
+  <h3 class="text-2xl font-medium mb-4 text-[#957B44] uppercase">
+    {% partial '_Shared/ListCheckboxTicked' %}
+    .NET 9 API with hot-reload
+  </h3>
+  <h3 class="text-2xl font-medium mb-4 text-[#957B44] uppercase">
+    {% partial '_Shared/ListCheckboxTicked' %}
+    Implement FastEndpoints
+  </h3>
+  <h3 class="text-2xl font-medium mb-4 text-[#957B44] uppercase">
+    {% partial '_Shared/ListCheckboxTicked' %}
+    Implement .liquid templates for UI
+  </h3>
+  <p class="text-lg leading-6 mb-4">
+    Liquid was originally created by Shopify as a secure and customizable template language for web content. Designed to empower users to modify storefronts safely, it has since become widely adopted in various web frameworks and static site generators.
+  </p>
+  <h3 class="text-2xl font-medium mb-4 text-[#957B44] uppercase">
+    {% partial '_Shared/ListCheckboxTicked' %}
+    Implement Tailwind CSS for styling
+  </h3>
+  <p class="text-lg leading-6 mb-4">
+    Currently using Tailwind CSS 4. `npm run dev` will start both `dotnet watch run` and the tailwind cli in watch mode.
+  </p>
+  <h3 class="text-2xl font-medium mb-4 text-[#957B44] uppercase">
+    {% partial '_Shared/ListCheckboxTicked' %}
+    Implement Datastar
+  </h3>
+  <h3 class="text-2xl font-medium mb-4 text-[#957B44] uppercase">
+    {% partial '_Shared/ListCheckbox' %}
+    Authentication and authorization using Auth0
+  </h3>
+  <h3 class="text-2xl font-medium mb-4 text-[#957B44] uppercase">
+    {% partial '_Shared/ListCheckbox' %}
+    Redirect to Auth0 login page from endpoint
+  </h3>
+  <p class="text-lg leading-6 mb-4">
+    If a endpoint is protected by authentication, the user will be redirected to the Auth0 login page. After successful login, the user will be redirected back to the original page.
+  </p>
+  <h3 class="text-2xl font-medium mb-4 text-[#957B44] uppercase">
+    {% partial '_Shared/ListCheckboxTicked' %}
+     Anonymous routes
+  </h3>
+  <h3 class="text-2xl font-medium mb-4 text-[#957B44] uppercase">
+    {% partial '_Shared/ListCheckboxTicked' %}
+    404 UI if endpoint is not found
+  </h3>
+  <h3 class="text-2xl font-medium mb-4 text-[#957B44] uppercase">
+    {% partial '_Shared/ListCheckbox' %}
+    Better error handling
+  </h3>
+
+
+  <h2 class="text-4xl font-medium mb-6 mt-12 text-[#957B44]">Future nice-to-haves</h2>
+  <h3 class="text-2xl font-medium mb-4 text-[#957B44] uppercase">
+    {% partial '_Shared/ListCheckboxTicked' %}
+    Tailwind part of hot-reload
+  </h3>
+  <p class="text-lg leading-6 mb-4">
+    When changes are made to the .liquid templates, the tailwind CSS is recompiled and hot-reloaded in the browser. This allows for a fast development experience without having to refresh the page.
+  </p>
+  <h3 class="text-2xl font-medium mb-4 text-[#957B44] uppercase">
+    {% partial '_Shared/ListCheckbox' %}
+    Navigation context inside .liquid templates
+  </h3>
+  <p class="text-lg leading-6 mb-4">
+    Could be valueable to have the navigation context inside the .liquid templates. This would allow for a more dynamic and reactive user experience. 
+  </p>
+  <h3 class="text-2xl font-medium mb-4 text-[#957B44] uppercase">
+    {% partial '_Shared/ListCheckbox' %}
+    Datastar SSE fragments using .liquid
+  </h3>
+  <h3 class="text-2xl font-medium mb-4 text-[#957B44] uppercase">
+    {% partial '_Shared/ListCheckbox' %}
+    Datastar SSE fragments using .liquid template inline?
+  </h3>
+  <h3 class="text-2xl font-medium mb-4 text-[#957B44] uppercase">
+    {% partial '_Shared/ListCheckbox' %}
+    Inline-.liquid code in FastEndpoints endpoint?
+  </h3>
+  <h3 class="text-2xl font-medium mb-4 text-[#957B44] uppercase">
+    {% partial '_Shared/ListCheckbox' %}
+    Look into best practices for FastEndpoints project structure
+  </h3>
+  <h3 class="text-2xl font-medium mb-4 text-[#957B44] uppercase">
+    {% partial '_Shared/ListCheckbox' %}
+    404 UI endpoint should return a 404 status code
+  </h3>
+</section>
+
+<section class="p-12 bg-white/5 rounded-lg mb-6">
   <h2 class="text-4xl font-medium mb-6 text-[#957B44]">This repository</h2>
   <p class="text-xl leading-10 mb-4">
-    While looking into dotnet and Datastar, I found that there were very few examples of using Datastar with FastEndpoints. So I decided to take a run at it.
-    During the process I stumbled across a few useful repositories from other authors taking a run at implementing Datastar with dotnet in different UI frameworks.
+    While looking into dotnet and Datastar, I found that there were very few examples of using Datastar with
+    FastEndpoints. So I decided to take a run at it. During the process I stumbled across a few useful repositories from
+    other authors taking a run at implementing Datastar with dotnet in different UI frameworks.
   </p>
   <h2 class="text-4xl font-medium mb-6 text-[#957B44]">Other repositories</h2>
-  <h3 class="text-xl font-medium mb-4 text-[#957B44] uppercase">
-    "RickTheHat/DatastarExamples"
-  </h3>
+  <h3 class="text-xl font-medium mb-4 text-[#957B44] uppercase">"RickTheHat/DatastarExamples"</h3>
   <p class="text-lg leading-10 mb-4">
-    Base for my repo is from his "DatastarExamples" repository. It is a collection of examples of using Datastar with different frameworks and languages.
-    The examples are not all working, but they are a good starting point for learning how to use Datastar with different frameworks.
+    Base for my repo is from his "DatastarExamples" repository. It is a collection of examples of using Datastar with
+    different frameworks and languages. The examples are not all working, but they are a good starting point for
+    learning how to use Datastar with different frameworks.
   </p>
-    <a href="https://github.com/RickTheHat/DatastarExamples" class="text-md" target="_blank">
-      Check his repo out here →
-    </a>
+  <a href="https://github.com/RickTheHat/DatastarExamples" class="text-md" target="_blank">
+    Check his repo out here →
+  </a>
+</section>
+
+<section class="p-12 bg-white/5 rounded-lg mb-6">
+  <h2 class="text-4xl font-medium mb-6 text-[#957B44]">References</h2>
+  <p class="text-xl leading-10 mb-4">
+    A few other repositories I found while looking into Datastar and FastEndpoints.
+  </p>
+  <a href="https://github.com/sebastienros/fluid/blob/main/MinimalApis.LiquidViews" class="block text-md leading-10" target="_blank">
+    https://github.com/sebastienros/fluid/blob/main/MinimalApis.LiquidViews
+  </a>
+  <a href="https://tailwindcss.com/docs/upgrade-guide#using-tailwind-cli" class="block text-md leading-10" target="_blank">
+    https://tailwindcss.com/docs/upgrade-guide#using-tailwind-cli
+  </a>
+  <a href="https://flowbite.com/docs/getting-started/quickstart/#install-using-npm" class="block text-md leading-10" target="_blank">
+   https://flowbite.com/docs/getting-started/quickstart/#install-using-npm
+  </a>
+  <a href="https://github.com/starfederation/datastar/tree/main/sdk/dotnet" class="block text-md leading-10" target="_blank">
+    https://github.com/starfederation/datastar/tree/main/sdk/dotnet
+  </a>
+  <a href="https://fast-endpoints.com/docs/server-sent-events" class="block text-md leading-10" target="_blank">
+    https://fast-endpoints.com/docs/server-sent-events
+  </a>
 </section>

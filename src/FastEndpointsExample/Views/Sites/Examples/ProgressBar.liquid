@@ -1,1 +1,29 @@
-Progress bar...
+<a
+  href="/examples"
+  class="bg-[#b39552] text-white p-6 w-full block p-2 rounded-sm hover:no-underline text-center text-xl mt-4 mb-6"
+>
+  BACK TO EXAMPLES
+</a>
+
+<section class="p-12 bg-white/5 rounded-lg mb-6">
+  <h2 class="text-4xl font-medium mb-6 text-[#957B44]">Progress bar</h2>
+  <div style="position: relative; width: 100%;">
+    <progress id="progressBar" value="0" max="100" style="width: 100%;"></progress>
+    <span
+      id="progressBarPercentage"
+      style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); font-weight: bold;"
+    >
+      0%
+    </span>
+  </div>
+  <div class="button-container" data-signals="{shouldDisable:false}">
+    <button
+      id="startButton"
+      data-on-click="$shouldDisable=true; @get('/examples/progressbar/status?actionType=start',{openWhenHidden:true})"
+      data-attr-disabled="$shouldDisable"
+      class="bg-[#b39552] text-white p-4 block p-2 rounded-sm hover:no-underline text-center text-xl mt-4 mb-6"
+    >
+      Start
+    </button>
+  </div>
+</section>
