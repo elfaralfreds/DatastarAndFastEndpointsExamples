@@ -12,18 +12,15 @@ Datastar is a lightweight hypermedia framework that brings reactive functionalit
  - [x] .NET 9 API with hot-reload
  - [x] Implement FastEndpoints
  - [x] Implement .liquid templates for UI
-
-       Liquid was originally created by Shopify as a secure and customizable template language for web content. Designed to empower users to modify storefronts safely, it has since become widely adopted in various web frameworks and static site generators.
+    - Liquid was originally created by Shopify as a secure and customizable template language for web content. Designed to empower users to modify storefronts safely, it has since become widely adopted in various web frameworks and static site generators.
 
  - [x] Implement Tailwind CSS for styling
-
-       Currently using Tailwind CSS 4. `npm run dev` will start both `dotnet watch run` and the tailwind cli in watch mode.
+    - Currently using Tailwind CSS 4. `npm run dev` will start both `dotnet watch run` and the tailwind cli in watch mode.
 
  - [x] Implement Datastar
  - [ ] Authentication and authorization using Auth0
  - [ ] Redirect to Auth0 login page from endpoint
-
-       If a endpoint is protected by authentication, the user will be redirected to the Auth0 login page. After successful login, the user will be redirected back to the original page.
+    - If a endpoint is protected by authentication, the user will be redirected to the Auth0 login page. After successful login, the user will be redirected back to the original page.
 
  - [x] Anonymous routes
  - [x] 404 UI if endpoint is not found
@@ -31,14 +28,12 @@ Datastar is a lightweight hypermedia framework that brings reactive functionalit
 
 ### Future nice-to-haves
  - [x] Tailwind part of hot-reload
-
-       When changes are made to the .liquid templates, the tailwind CSS is recompiled and hot-reloaded in the browser. This allows for a fast development experience without having to refresh the page.
+    - When changes are made to the .liquid templates, the tailwind CSS is recompiled and hot-reloaded in the browser. This allows for a fast development experience without having to refresh the page.
 
  - [ ] Hot-reload FastEndpoints endpoints registration if path has changed
  - [ ] Navigation context inside .liquid templates
  - [x] Datastar SSE fragments using .liquid
-
-       Could be valueable to have the navigation context inside the .liquid templates. This would allow for a more dynamic and reactive user experience.
+    - Could be valueable to have the navigation context inside the .liquid templates. This would allow for a more dynamic and reactive user experience.
 
  - [ ] Datastar SSE fragments using .liquid template inline?
  - [ ] Inline-.liquid code in FastEndpoints endpoint?
