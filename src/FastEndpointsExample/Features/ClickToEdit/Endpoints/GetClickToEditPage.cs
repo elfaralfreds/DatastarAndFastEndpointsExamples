@@ -15,12 +15,7 @@ public class GetClickToEditPage : EndpointWithoutRequest
                 "Sites/Examples/ClickToEdit",
                 new
                 {
-                    User = new 
-                    {
-                        Firstname = "John",
-                        Lastname = "Doe",
-                        Email = "joe@blow.com"
-                    }
+                    User = UserService.CurrentUser
                 }
             ).ExecuteAsync(this.HttpContext);
     }
