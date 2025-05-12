@@ -1,0 +1,36 @@
+<div id="contact-form">
+  <div class="grid gap-6 mb-6 md:grid-cols-2">
+    <div>
+      <label for="first_name" class="block mb-2 text-sm font-medium text-white-900 underline">First name</label>
+      <p class="mt-1 text-sm/6">
+        {{ User.Firstname }}
+      </p>
+    </div>
+    <div>
+      <label for="last_name" class="block mb-2 text-sm font-medium text-white-900 underline">Last name</label>
+      <p class="mt-1 text-sm/6">
+        {{ User.Lastname }}
+      </p>
+    </div>
+  </div>
+  <div class="mb-6">
+    <label for="email" class="block mb-2 text-sm font-medium text-white-900 underline">Email address</label>
+    <p class="mt-1 text-sm/6">
+      {{ User.Email }}
+    </p>
+  </div>
+  <div class="flex gap-4">
+    <button
+      class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
+      data-on-click="@get('/examples/click-to-edit/edit-contact')"
+    >
+      Edit
+    </button>
+    <button
+      class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
+      data-on-click="@get('/examples/click-to-edit/reset-contact')"
+    >
+      Reset
+    </button>
+  </div>
+</div>

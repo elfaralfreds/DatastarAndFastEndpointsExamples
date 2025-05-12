@@ -1,18 +1,18 @@
 
 using FastEndpoints;
 
-public class GetClickToEditPage : EndpointWithoutRequest
+public class ResetContact : EndpointWithoutRequest
 {
     public override void Configure()
     {
-        Get("/examples/click-to-edit");
+        Get("/examples/click-to-edit/reset-contact");
         AllowAnonymous();
     }
 
     public override async Task HandleAsync(CancellationToken ct)
     {
         await Results.Extensions.View(
-                "Sites/Examples/ClickToEdit",
+                "_Partials/ClickToEditForm",
                 new
                 {
                     User = new 
