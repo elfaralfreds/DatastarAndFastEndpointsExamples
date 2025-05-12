@@ -6,34 +6,25 @@
 </a>
 
 <section class="p-12 bg-white/5 rounded-lg mb-6">
-  <h2 class="text-4xl font-medium mb-6 text-[#957B44]">Progress bar</h2>
+  <h2 class="text-4xl font-medium mb-6 text-[#957B44]">Active search</h2>
   <h3 class="text-3xl font-medium mb-6 text-[#957B44]">Example</h3>
-  <div class="bg-white/5 rounded-lg p-4">
-    <div
-      id="progress_bar"
-      data-on-load="@get('/examples/progressbar/status?actionType=start',{openWhenHidden:true})"
-    ></div>
-  </div>
+  ...
 </section>
 
 <section class="p-12 bg-white/5 rounded-lg mb-6">
   <h3 class="text-3xl font-medium mb-6 text-[#957B44]">Todo</h3>
   <h4 class="text-lg font-medium mb-4 text-[#957B44] uppercase">
-    {% partial '_Shared/ListCheckboxTicked' %}
-    Get progress bar value from server
-  </h4>
-  <h4 class="text-lg font-medium mb-4 text-[#957B44] uppercase">
-    {% partial '_Shared/ListCheckboxTicked' %}
-    Try again
+    {% partial '_Shared/ListCheckbox' %}
+    
   </h4>
 </section>
 
 <section class="p-12 bg-white/5 rounded-lg mb-6">
   <h3 class="text-3xl font-medium mb-6 text-[#957B44]">Inspirations</h3>
-  <a href="https://data-star.dev/examples/progress_bar" class="block text-md leading-10" target="_blank">
+  <a href="#" class="block text-md leading-10" target="_blank">
     Original Datastar example
   </a>
-  <a href="https://htmx.org/examples/progress-bar/" class="block text-md leading-10" target="_blank">
+  <a href="#" class="block text-md leading-10" target="_blank">
     Original HTMX example
   </a>
 </section>

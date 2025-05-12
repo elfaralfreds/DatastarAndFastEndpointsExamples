@@ -1022,6 +1022,9 @@
   .my-4 {
     margin-block: calc(var(--spacing) * 4);
   }
+  .me-2 {
+    margin-inline-end: calc(var(--spacing) * 2);
+  }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
@@ -1536,6 +1539,9 @@
       text-align: center;
     }
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
@@ -1639,6 +1645,9 @@
   }
   .flex-shrink {
     flex-shrink: 1;
+  }
+  .border-collapse {
+    border-collapse: collapse;
   }
   .-translate-x-full {
     --tw-translate-x: -100%;
@@ -1943,6 +1952,9 @@
   .border-gray-300 {
     border-color: var(--color-gray-300);
   }
+  .border-white {
+    border-color: var(--color-white);
+  }
   .border-white\/10 {
     border-color: color-mix(in srgb, #ffffff 10%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -1994,6 +2006,9 @@
   .bg-\[\#b39552\] {
     background-color: #b39552;
   }
+  .bg-blue-600 {
+    background-color: var(--color-blue-600);
+  }
   .bg-blue-700 {
     background-color: var(--color-blue-700);
   }
@@ -2003,10 +2018,25 @@
   .bg-gray-200 {
     background-color: var(--color-gray-200);
   }
+  .bg-gray-900 {
+    background-color: var(--color-gray-900);
+  }
   .bg-gray-900\/50 {
     background-color: color-mix(in srgb, #111827 50%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-gray-900) 50%, transparent);
+    }
+  }
+  .bg-green-700 {
+    background-color: var(--color-green-700);
+  }
+  .bg-orange-400 {
+    background-color: var(--color-orange-400);
+  }
+  .bg-orange-400\/10 {
+    background-color: color-mix(in srgb, #ED8936 10%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-orange-400) 10%, transparent);
     }
   }
   .bg-transparent {
@@ -2070,6 +2100,18 @@
       fill: white !important;
     }
   }
+  .apexcharts-gridline {
+    stroke: var(--color-gray-200) !important;
+    .dark & {
+      stroke: var(--color-gray-700) !important;
+    }
+  }
+  .apexcharts-xcrosshairs {
+    stroke: var(--color-gray-200) !important;
+    .dark & {
+      stroke: var(--color-gray-700) !important;
+    }
+  }
   .apexcharts-ycrosshairs {
     stroke: var(--color-gray-200) !important;
     .dark & {
@@ -2085,6 +2127,12 @@
     .apexcharts-canvas .apexcharts-tooltip-series-group.apexcharts-active & {
       padding: 0 !important;
     }
+  }
+  .p-0 {
+    padding: calc(var(--spacing) * 0);
+  }
+  .p-0\.5 {
+    padding: calc(var(--spacing) * 0.5);
   }
   .p-1 {
     padding: calc(var(--spacing) * 1);
@@ -2205,6 +2253,10 @@
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
   }
+  .text-xs {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
   .apexcharts-datalabels {
     .apexcharts-canvas & .apexcharts-text.apexcharts-pie-label {
       font-size: 0.75rem,[object Object] !important;
@@ -2273,6 +2325,10 @@
   .leading-\[40px\] {
     --tw-leading: 40px;
     line-height: 40px;
+  }
+  .leading-none {
+    --tw-leading: 1;
+    line-height: 1;
   }
   .leading-relaxed {
     --tw-leading: var(--leading-relaxed);
@@ -2353,6 +2409,9 @@
   .text-\[\#fff\] {
     color: #fff;
   }
+  .text-blue-100 {
+    color: var(--color-blue-100);
+  }
   .text-blue-600 {
     color: var(--color-blue-600);
   }
@@ -2373,6 +2432,9 @@
   }
   .uppercase {
     text-transform: uppercase;
+  }
+  .underline {
+    text-decoration-line: underline;
   }
   .opacity-0 {
     opacity: 0%;
@@ -2450,6 +2512,13 @@
       }
     }
   }
+  .hover\:bg-green-800 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-green-800);
+      }
+    }
+  }
   .hover\:bg-white {
     &:hover {
       @media (hover: hover) {
@@ -2510,6 +2579,11 @@
   .focus\:ring-gray-200 {
     &:focus {
       --tw-ring-color: var(--color-gray-200);
+    }
+  }
+  .focus\:ring-green-300 {
+    &:focus {
+      --tw-ring-color: var(--color-green-300);
     }
   }
   .focus\:outline-none {
@@ -2618,6 +2692,11 @@
       }
     }
   }
+  .dark\:bg-green-600 {
+    @media (prefers-color-scheme: dark) {
+      background-color: var(--color-green-600);
+    }
+  }
   .dark\:text-blue-500 {
     @media (prefers-color-scheme: dark) {
       color: var(--color-blue-500);
@@ -2670,6 +2749,15 @@
       }
     }
   }
+  .dark\:hover\:bg-green-700 {
+    @media (prefers-color-scheme: dark) {
+      &:hover {
+        @media (hover: hover) {
+          background-color: var(--color-green-700);
+        }
+      }
+    }
+  }
   .dark\:hover\:text-blue-500 {
     @media (prefers-color-scheme: dark) {
       &:hover {
@@ -2708,6 +2796,13 @@
     @media (prefers-color-scheme: dark) {
       &:focus {
         --tw-ring-color: var(--color-gray-600);
+      }
+    }
+  }
+  .dark\:focus\:ring-green-800 {
+    @media (prefers-color-scheme: dark) {
+      &:focus {
+        --tw-ring-color: var(--color-green-800);
       }
     }
   }
