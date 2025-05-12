@@ -7,6 +7,25 @@ Datastar is a lightweight hypermedia framework that brings reactive functionalit
  - The simplicity and reliability of server-side rendering
  - The dynamic, reactive user experience in the style of a Single Page Application (SPA) but with very little to no JavaScript
 
+## This repository
+
+While looking into .Net Core and Datastar, I found that there were very few examples of using Datastar with FastEndpoints. So I decided to take a run at it. During the process I stumbled across a few useful repositories from other authors taking a run at implementing Datastar with dotnet in different UI frameworks.
+
+### Run locally
+
+Go to `src/FastEndpointsExample`
+
+Run following command to initialize package managers
+> npm run init
+( *Will run `dotnet restore` and `npm install` concurrently* )
+
+*Run following command to start*
+> npm run dev
+
+( *Will run `dotnet watch run` and `tailwind css cli` concurrently* )
+
+More details for commands in the package.json
+
 ## Goals
 
  - [x] .NET 9 API with hot-reload
@@ -40,9 +59,7 @@ Datastar is a lightweight hypermedia framework that brings reactive functionalit
  - [ ] Look into best practices for FastEndpoints project structure
  - [ ] 404 UI endpoint should return a 404 status code
 
-## This repository
-
-While looking into dotnet and Datastar, I found that there were very few examples of using Datastar with FastEndpoints. So I decided to take a run at it. During the process I stumbled across a few useful repositories from other authors taking a run at implementing Datastar with dotnet in different UI frameworks.
+## References
 
 ### Other repositories
 
@@ -52,7 +69,7 @@ Base for my repo is from his "DatastarExamples" repository. It is a collection o
 
 [Check his repo out here →](https://github.com/RickTheHat/DatastarExamples)
 
-## References
+### Links
 
 - https://github.com/sebastienros/fluid/blob/main/MinimalApis.LiquidViews
 - https://tailwindcss.com/docs/upgrade-guide#using-tailwind-cli
