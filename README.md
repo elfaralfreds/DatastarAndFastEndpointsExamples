@@ -76,3 +76,4 @@ Base for my repo is from his "DatastarExamples" repository. It is a collection o
 - https://flowbite.com/docs/getting-started/quickstart/#install-using-npm
 - https://github.com/starfederation/datastar/tree/main/sdk/dotnet
 - https://fast-endpoints.com/docs/server-sent-events
+- https://github.com/starfederation/datastar/blob/develop/site/routes_examples_click_to_edit.go 

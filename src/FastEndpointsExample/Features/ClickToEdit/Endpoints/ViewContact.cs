@@ -3,11 +3,11 @@ using FastEndpoints;
 using FastEndpointsExample.Helpers;
 using StarFederation.Datastar.DependencyInjection;
 
-public class EditContact : EndpointWithoutRequest
+public class ViewContact : EndpointWithoutRequest
 {
     public override void Configure()
     {
-        Get("/examples/click-to-edit/edit-contact");
+        Get("/examples/click-to-edit/view-contact");
         AllowAnonymous();
     }
 
@@ -26,7 +26,7 @@ public class EditContact : EndpointWithoutRequest
         };
 
         await sse.MergeFragmentsAsync(
-            await Results.Extensions.ViewAsString(this.HttpContext.Duplicate(), "_Partials/ClickToEditForm", payload)
+            await Results.Extensions.ViewAsString(this.HttpContext.Duplicate(), "_Partials/ClickToEditDisplay", payload)
         );
     }
 }
