@@ -1,8 +1,13 @@
 public class UserService
 {
-    public static User CurrentUser { get; set; } = ResetUser();
+    public User CurrentUser { get; private set; }
 
-    public static User ResetUser()
+    public UserService()
+    {
+        CurrentUser = ResetUser();
+    }
+
+    public User ResetUser()
     {
         return new User
         {
