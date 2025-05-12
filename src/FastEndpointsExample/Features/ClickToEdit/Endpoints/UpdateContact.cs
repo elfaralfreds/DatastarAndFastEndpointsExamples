@@ -22,7 +22,7 @@ public class UpdateContact : EndpointWithoutRequest
             return;
         }
 
-        var request = await dsSignals.ReadSignalsAsync<User>(); ;
+        var request = await dsSignals.ReadSignalsAsync<User>();
         var userValidator = new UserValidator();
         var validation = await userValidator.ValidateAsync(request);
 
