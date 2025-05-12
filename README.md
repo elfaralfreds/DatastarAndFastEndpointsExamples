@@ -13,7 +13,7 @@ Datastar is a lightweight hypermedia framework that brings reactive functionalit
  - [x] Implement FastEndpoints
  - [x] Implement .liquid templates for UI
 
-       Liquid was originally created by Shopify as a secure and customizable template language for web content. Designed to empower users to modify storefronts safely, it has since become widely adopted in various web frameworks and static site generators.
+       ```Liquid was originally created by Shopify as a secure and customizable template language for web content. Designed to empower users to modify storefronts safely, it has since become widely adopted in various web frameworks and static site generators.```
 
  - [x] Implement Tailwind CSS for styling
 
