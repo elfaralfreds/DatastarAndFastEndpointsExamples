@@ -1,5 +1,7 @@
 using System.Text.Json.Serialization;
 
+namespace FastDatastar.Features.ClickToEdit.Dto;
+
 public class User
 {
     [JsonPropertyName("firstName")]

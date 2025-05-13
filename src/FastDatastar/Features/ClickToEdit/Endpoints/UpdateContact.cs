@@ -1,8 +1,13 @@
 
 using System.Text.Json;
+using FastDatastar.Features.ClickToEdit.Dto;
+using FastDatastar.Features.ClickToEdit.Services;
+using FastDatastar.Features.ClickToEdit.Validators;
 using FastEndpoints;
-using FastEndpointsExample.Helpers;
+using FastDatastar.Helpers;
 using StarFederation.Datastar.DependencyInjection;
+
+namespace FastDatastar.Features.ClickToEdit.Endpoints;
 
 public class UpdateContact : EndpointWithoutRequest
 {

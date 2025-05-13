@@ -1,3 +1,7 @@
+using FastDatastar.Features.ClickToEdit.Dto;
+
+namespace FastDatastar.Features.ClickToEdit.Services;
+
 public class UserService
 {
     public static User CurrentUser { get; internal set; }

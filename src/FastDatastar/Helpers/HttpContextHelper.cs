@@ -1,4 +1,4 @@
-namespace FastEndpointsExample.Helpers;
+namespace FastDatastar.Helpers;
 
 public static class HttpContextExtensions
 {

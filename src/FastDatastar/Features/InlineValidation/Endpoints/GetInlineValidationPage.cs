@@ -1,5 +1,7 @@
-
+using FastDatastar.Helpers;
 using FastEndpoints;
+
+namespace FastDatastar.Features.InlineValidation.Endpoints;
 
 public class GetInlineValidationPage : EndpointWithoutRequest
 {

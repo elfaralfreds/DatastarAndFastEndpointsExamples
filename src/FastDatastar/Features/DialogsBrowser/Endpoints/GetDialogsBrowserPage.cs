@@ -1,5 +1,7 @@
-
+using FastDatastar.Helpers;
 using FastEndpoints;
+
+namespace FastDatastar.Features.DialogsBrowser.Endpoints;
 
 public class GetDialogsBrowserPage : EndpointWithoutRequest
 {

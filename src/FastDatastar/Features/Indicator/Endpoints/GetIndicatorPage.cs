@@ -1,5 +1,7 @@
-
+using FastDatastar.Helpers;
 using FastEndpoints;
+
+namespace FastDatastar.Features.Indicator.Endpoints;
 
 public class GetIndicatorPage : EndpointWithoutRequest
 {

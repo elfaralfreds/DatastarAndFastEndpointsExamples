@@ -1,5 +1,7 @@
-
+using FastDatastar.Helpers;
 using FastEndpoints;
+
+namespace FastDatastar.Features.DeleteRow.Endpoints;
 
 public class GetDeleteRowPage : EndpointWithoutRequest
 {

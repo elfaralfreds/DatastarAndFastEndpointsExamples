@@ -1,5 +1,7 @@
-
+using FastDatastar.Helpers;
 using FastEndpoints;
+
+namespace FastDatastar.Features.Animations.Endpoints;
 
 public class GetAnimationsPage : EndpointWithoutRequest
 {

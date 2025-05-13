@@ -1,6 +1,9 @@
 using System.Data;
+using FastDatastar.Features.ClickToEdit.Dto;
 using FastEndpoints;
 using FluentValidation;
+
+namespace FastDatastar.Features.ClickToEdit.Validators;
 
 public class UserValidator : Validator<User>
 {

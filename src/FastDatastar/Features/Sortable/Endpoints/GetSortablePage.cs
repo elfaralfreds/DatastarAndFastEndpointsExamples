@@ -1,5 +1,7 @@
-
+using FastDatastar.Helpers;
 using FastEndpoints;
+
+namespace FastDatastar.Features.Sortable.Endpoints;
 
 public class GetSortablePage : EndpointWithoutRequest
 {

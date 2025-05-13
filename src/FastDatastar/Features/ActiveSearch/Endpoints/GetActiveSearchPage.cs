@@ -1,5 +1,7 @@
-
+using FastDatastar.Helpers;
 using FastEndpoints;
+
+namespace FastDatastar.Features.ActiveSearch.Endpoints;
 
 public class GetActiveSearchPage : EndpointWithoutRequest
 {

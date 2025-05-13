@@ -1,5 +1,7 @@
-
+using FastDatastar.Helpers;
 using FastEndpoints;
+
+namespace FastDatastar.Features.BulkUpdate.Endpoints;
 
 public class GetBulkUpdatePage : EndpointWithoutRequest
 {

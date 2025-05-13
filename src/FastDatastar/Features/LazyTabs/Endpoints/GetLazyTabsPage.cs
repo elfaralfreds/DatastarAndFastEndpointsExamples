@@ -1,5 +1,7 @@
-
+using FastDatastar.Helpers;
 using FastEndpoints;
+
+namespace FastDatastar.Features.LazyTabs.Endpoints;
 
 public class GetLazyTabsPage : EndpointWithoutRequest
 {

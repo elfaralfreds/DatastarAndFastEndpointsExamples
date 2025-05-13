@@ -18,6 +18,9 @@
   
   <ItemGroup>
     <Watch Include="wwwroot/css/**/*.css" />
+    <Content Include="Views\**\*.*">
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

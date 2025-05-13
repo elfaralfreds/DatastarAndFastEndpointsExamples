@@ -39,7 +39,7 @@ COPY --from=build /app/publish .
 EXPOSE 8080
 
 ENV ASPNETCORE_URLS=http://+:8080
-ENV ASPNETCORE_HTTP_PORTS=8080
+ENV ASPNETCORE_ENVIRONMENT=Production
 
 # Set the entry point for the application
 ENTRYPOINT ["dotnet", "FastDatastar.dll"]

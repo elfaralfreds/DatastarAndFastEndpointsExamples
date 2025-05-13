@@ -1,5 +1,8 @@
-
+using FastDatastar.Helpers;
+using FastDatastar.Features.ClickToEdit.Services;
 using FastEndpoints;
+
+namespace FastDatastar.Features.ClickToEdit.Endpoints;
 
 public class GetClickToEditPage : EndpointWithoutRequest
 {

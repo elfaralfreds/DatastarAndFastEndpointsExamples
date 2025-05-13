@@ -1,6 +1,8 @@
 using FastEndpoints;
-using FastEndpointsExample.Helpers;
+using FastDatastar.Helpers;
 using StarFederation.Datastar.DependencyInjection;
+
+namespace FastDatastar.Features.ProgressBar.Endpoints;
 
 public class GetProgressStatus : EndpointWithoutRequest
 {
