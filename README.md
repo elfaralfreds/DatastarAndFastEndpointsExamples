@@ -13,7 +13,7 @@ While looking into .Net Core and Datastar, I found that there were very few exam
 
 ### Run locally
 
-Go to `src/FastEndpointsExample`
+Go to `src/FastDatastar`
 
 Run following command to initialize package managers
 > npm run init
