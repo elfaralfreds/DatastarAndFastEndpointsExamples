@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using StarFederation.Datastar.DependencyInjection;
 
-public class FallbackNotFoundEndpoint : EndpointWithoutRequest
+public class Get404Page : EndpointWithoutRequest
 {
     public override void Configure()
     {

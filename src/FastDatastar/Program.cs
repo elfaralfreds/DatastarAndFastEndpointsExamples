@@ -6,11 +6,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddFluid();
 builder.Services.AddFastEndpoints(options => {
-    options.DisableAutoDiscovery = true;
-    options.Assemblies = new[]
-    {
-        Assembly.GetExecutingAssembly()
-    };
 });
 builder.Services.AddDatastar();
 

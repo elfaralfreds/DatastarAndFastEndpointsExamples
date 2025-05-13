@@ -1,6 +1,6 @@
 public class UserService
 {
-    public static User CurrentUser { get; private set; }
+    public static User CurrentUser { get; internal set; }
 
     static UserService()
     {

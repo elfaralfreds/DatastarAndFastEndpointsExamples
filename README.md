@@ -44,6 +44,7 @@ More details for commands in the package.json
  - [x] Anonymous routes
  - [x] 404 UI if endpoint is not found
  - [ ] Better error handling
+ - [x] Deploy demo to Fly.io
 
 ### Future nice-to-haves
  - [x] Tailwind part of hot-reload
