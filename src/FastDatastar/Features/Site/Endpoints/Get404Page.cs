@@ -1,3 +1,4 @@
+using FastDatastar.Helpers;
 using FastEndpoints;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -11,13 +12,20 @@ public class Get404Page : EndpointWithoutRequest
     {
         Verbs(Http.GET);
         Routes("{*path:regex(^((?!\\.).)*$)}");
-        AllowAnonymous();                // no auth required
-        // Summary(s => s.WithTags("Errors"));
+        AllowAnonymous();
     }
 
     public override async Task HandleAsync(CancellationToken ct)
     {
         var path = Route<string>("path");
-        await Results.Extensions.View("Errors/404", new { Path = path }).ExecuteAsync(this.HttpContext);
+        await SendStringAsync(
+            await Results.Extensions.ViewAsString(
+                this.HttpContext.Duplicate(), 
+                "Errors/404", 
+                new { Path = path }
+            ),
+            contentType: "text/html",
+            statusCode: StatusCodes.Status404NotFound
+        );
     }
 }
