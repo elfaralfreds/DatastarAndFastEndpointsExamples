@@ -11,6 +11,10 @@ Datastar is a lightweight hypermedia framework that brings reactive functionalit
 
 While looking into .Net Core and Datastar, I found that there were very few examples of using Datastar with FastEndpoints. So I decided to take a run at it. During the process I stumbled across a few useful repositories from other authors taking a run at implementing Datastar with dotnet in different UI frameworks.
 
+### Demo
+
+Current state ( should be ) running here: https://datastar-fastendpoints-demo.fly.dev/
+
 ### Run locally
 
 Go to `src/FastDatastar`
