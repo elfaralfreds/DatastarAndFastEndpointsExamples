@@ -6,7 +6,7 @@
 
   <div class="mb-10">
     <h3 class="text-3xl font-medium mb-4 text-[#957B44] uppercase">
-        {% partial '_Shared/TodoItem' %}
+        {% partial '_Shared/TodoItemDone' %}
         Active search
     </h3>
     <p class="text-lg leading-6 mb-4">
@@ -19,8 +19,9 @@
 
   <div class="mb-10">
     <h3 class="text-3xl font-medium mb-4 text-[#957B44] uppercase">
-        {% partial '_Shared/TodoItem' %}
+        {% partial '_Shared/TodoItemInProgress' %}
         Animations
+        <small>( Work in progress )</small>
     </h3>
     <p class="text-lg leading-6 mb-4">
         Use CSS transitions to add smooth animations and transitions to your web page

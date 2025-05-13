@@ -1,0 +1,63 @@
+<div
+  id="active-search"
+  data-signals="
+    {
+        input: '{{ Input }}',
+    }
+  "
+>
+  <div class="grid gap-6 mb-6 md:grid-cols-2">
+    <div class="mb-6">
+      <label
+        class="block mb-2 text-sm font-medium text-white-900 underline"
+      >
+        Search input
+      </label>
+      <input
+        type="text"
+        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+        data-bind-input
+        data-on-input__debounce.1000ms="@get('/examples/active-search/get-contacts')"
+      >
+    </div>
+    <div class="mb-6">
+      <label
+        class="block mb-2 text-sm font-medium text-white-900 underline text-right"
+      >
+        Results
+      </label>
+        <p class="mt-1 text-sm/6 py-2.5 text-right">
+            {{ Contacts | size  }} results found in {{ Total }} contacts
+        </p>
+    </div>
+  </div>
+
+  <div class="relative overflow-x-auto">
+    <table class="w-full text-sm text-left text-gray-500">
+      <thead class="text-xs text-gray-400 uppercase bg-gray-700">
+        <tr>
+          <th scope="col" class="px-6 py-3">Firstname</th>
+          <th scope="col" class="px-6 py-3">Lastname</th>
+          <th scope="col" class="px-6 py-3">Email</th>
+          <th scope="col" class="px-6 py-3">Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for contact in Contacts %}
+          <tr class="bg-gray-800 border-b border-gray-700">
+            <th scope="row" class="px-6 py-4 font-medium text-gray-400 whitespace-nowrap">
+              {{ contact.Firstname }}
+            </th>
+            <td class="px-6 py-4">
+              {{ contact.Lastname }}
+            </td>
+            <td class="px-6 py-4">
+              {{ contact.Email }}
+            </td>
+            <td class="px-6 py-4">-</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>

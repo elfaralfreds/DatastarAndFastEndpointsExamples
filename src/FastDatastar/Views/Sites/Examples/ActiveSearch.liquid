@@ -8,23 +8,31 @@
 <section class="p-12 bg-white/5 rounded-lg mb-6">
   <h2 class="text-4xl font-medium mb-6 text-[#957B44]">Active search</h2>
   <h3 class="text-3xl font-medium mb-6 text-[#957B44]">Example</h3>
-  ...
+  {% partial '_Partials/ActiveSearchDisplay' %}
 </section>
 
 <section class="p-12 bg-white/5 rounded-lg mb-6">
   <h3 class="text-3xl font-medium mb-6 text-[#957B44]">Todo</h3>
   <h4 class="text-lg font-medium mb-4 text-[#957B44] uppercase">
-    {% partial '_Shared/ListCheckbox' %}
-    
+    {% partial '_Shared/ListCheckboxTicked' %}
+    Show form
+  </h4>
+  <h4 class="text-lg font-medium mb-4 text-[#957B44] uppercase">
+    {% partial '_Shared/ListCheckboxTicked' %}
+    Show contact list
+  </h4>
+  <h4 class="text-lg font-medium mb-4 text-[#957B44] uppercase">
+    {% partial '_Shared/ListCheckboxTicked' %}
+    Implement search
   </h4>
 </section>
 
 <section class="p-12 bg-white/5 rounded-lg mb-6">
   <h3 class="text-3xl font-medium mb-6 text-[#957B44]">Inspirations</h3>
-  <a href="#" class="block text-md leading-10" target="_blank">
+  <a href="https://data-star.dev/examples/active_search" class="block text-md leading-10" target="_blank">
     Original Datastar example
   </a>
-  <a href="#" class="block text-md leading-10" target="_blank">
+  <a href="https://htmx.org/examples/active-search/" class="block text-md leading-10" target="_blank">
     Original HTMX example
   </a>
 </section>
