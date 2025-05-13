@@ -28,8 +28,13 @@ public class UpdateContact : EndpointWithoutRequest
         }
 
         var request = await dsSignals.ReadSignalsAsync<User>();
+
         var userValidator = new UserValidator();
         var validation = await userValidator.ValidateAsync(request);
+
+        request.Firstname = HtmlSanitizer.Sanitize(request.Firstname);
+        request.Lastname = HtmlSanitizer.Sanitize(request.Lastname);
+        request.Email = HtmlSanitizer.Sanitize(request.Email);
 
         if (!validation.IsValid)
         {
