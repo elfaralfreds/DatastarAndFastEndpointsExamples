@@ -1,5 +1,7 @@
-
+using FastDatastar.Helpers;
 using FastEndpoints;
+
+namespace FastDatastar.Features.LazyLoad.Endpoints;
 
 public class GetLazyLoadPage : EndpointWithoutRequest
 {

@@ -1,5 +1,7 @@
-
+using FastDatastar.Helpers;
 using FastEndpoints;
+
+namespace FastDatastar.Features.ClickToLoad.Endpoints;
 
 public class GetClickToLoadPage : EndpointWithoutRequest
 {

@@ -1,5 +1,7 @@
-
+using FastDatastar.Helpers;
 using FastEndpoints;
+
+namespace FastDatastar.Features.ProgressBar.Endpoints;
 
 public class GetProgressBarPage : EndpointWithoutRequest
 {

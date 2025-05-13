@@ -1,5 +1,7 @@
-
+using FastDatastar.Helpers;
 using FastEndpoints;
+
+namespace FastDatastar.Features.Site.Endpoints;
 
 public class GetFrontpagePage : EndpointWithoutRequest
 {

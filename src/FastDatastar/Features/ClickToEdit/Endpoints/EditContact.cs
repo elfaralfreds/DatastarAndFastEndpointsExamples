@@ -1,7 +1,10 @@
 
+using FastDatastar.Features.ClickToEdit.Services;
 using FastEndpoints;
-using FastEndpointsExample.Helpers;
+using FastDatastar.Helpers;
 using StarFederation.Datastar.DependencyInjection;
+
+namespace FastDatastar.Features.ClickToEdit.Endpoints;
 
 public class EditContact : EndpointWithoutRequest
 {

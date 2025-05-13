@@ -1,5 +1,7 @@
-
+using FastDatastar.Helpers;
 using FastEndpoints;
+
+namespace FastDatastar.Features.FileUpload.Endpoints;
 
 public class GetFileUploadPage : EndpointWithoutRequest
 {

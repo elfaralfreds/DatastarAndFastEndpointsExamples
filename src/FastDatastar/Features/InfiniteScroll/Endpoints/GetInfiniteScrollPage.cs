@@ -1,5 +1,7 @@
-
+using FastDatastar.Helpers;
 using FastEndpoints;
+
+namespace FastDatastar.Features.InfiniteScroll.Endpoints;
 
 public class GetInfiniteScrollPage : EndpointWithoutRequest
 {

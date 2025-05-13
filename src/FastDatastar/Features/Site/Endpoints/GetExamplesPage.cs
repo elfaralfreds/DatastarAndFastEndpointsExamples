@@ -1,5 +1,7 @@
-
+using FastDatastar.Helpers;
 using FastEndpoints;
+
+namespace FastDatastar.Features.Site.Endpoints;
 
 public class GetExamplesPage : EndpointWithoutRequest
 {
@@ -11,6 +13,9 @@ public class GetExamplesPage : EndpointWithoutRequest
 
     public override async Task HandleAsync(CancellationToken ct)
     {
-        await Results.Extensions.View("Sites/Examples/Default", new { }).ExecuteAsync(this.HttpContext);
+        await SendStringAsync(
+            await Results.Extensions.ViewAsString(this.HttpContext.Duplicate(), "Sites/Examples/Default", new { }),
+            contentType: "text/html"
+        );
     }
 }
